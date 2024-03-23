@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier 
 import { View, Text } from 'react-native/'
 import React from 'react'
 import { MaterialTopTabNavigationEventMap, MaterialTopTabNavigationOptions, createMaterialTopTabNavigator,
@@ -22,4 +21,3 @@ const Layout = () => {
 }
 
 export default Layout 
-*/

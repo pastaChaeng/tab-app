@@ -6,7 +6,7 @@ const Layout = () => {
   return (
    <Stack screenOptions={{headerShadowVisible: false}}>
     <Stack.Screen 
-    name="(tabs)/index"
+    name="(tabs)"
     options={{
       headerLeft: () => (
         <FontAwesome6 name="user-circle" size={24} color="black" />
