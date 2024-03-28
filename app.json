@@ -21,7 +21,7 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/rrg-logo.png",
+      "image": "./assets/3d-truck.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
