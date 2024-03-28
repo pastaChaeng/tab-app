@@ -1,10 +1,13 @@
+import { Feather, Ionicons } from '@expo/vector-icons';
+import { Link } from 'expo-router';
 import { View, Text, ScrollView, StyleSheet } from 'react-native';
+
 const Page = () => {
   return (
     <View style={styles.mainScreen}>
       <ScrollView>
         <View style={[styles.deliveryTruckTile]}>
-          <Text style={{ textAlign: 'center' }}>No deliveries assigned.</Text>
+          <Text style={{ textAlign: 'center' }}>No Deliveries Completed.</Text>
         </View>
       </ScrollView>
     </View>

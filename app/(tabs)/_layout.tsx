@@ -1,23 +1,23 @@
-import { View, Text } from 'react-native/'
-import React from 'react'
-import { MaterialTopTabNavigationEventMap, MaterialTopTabNavigationOptions, createMaterialTopTabNavigator,
-         
-} from '@react-navigation/material-top-tabs'
-import { withLayoutContext } from 'expo-router' 
-import { ParamListBase, TabNavigationState } from '@react-navigation/native'
+import {
+  MaterialTopTabNavigationEventMap,
+  MaterialTopTabNavigationOptions,
+  createMaterialTopTabNavigator,
+} from '@react-navigation/material-top-tabs';
+import { ParamListBase, TabNavigationState } from '@react-navigation/native';
+import { withLayoutContext } from 'expo-router';
+import React from 'react';
+import { View, Text } from 'react-native/';
 
-const { Navigator } = createMaterialTopTabNavigator()
+const { Navigator } = createMaterialTopTabNavigator();
 
 export const MaterialTopTabs = withLayoutContext<
-MaterialTopTabNavigationOptions,
-typeof Navigator,
-TabNavigationState<ParamListBase>,
-MaterialTopTabNavigationEventMap>
-(Navigator)
+  MaterialTopTabNavigationOptions,
+  typeof Navigator,
+  TabNavigationState<ParamListBase>,
+  MaterialTopTabNavigationEventMap
+>(Navigator);
 const Layout = () => {
-  return (
-     <MaterialTopTabs></MaterialTopTabs>
-  )
-}
+  return <MaterialTopTabs />;
+};
 
-export default Layout 
+export default Layout;

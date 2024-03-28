@@ -1,38 +1,26 @@
-import { FontAwesome6, Feather } from '@expo/vector-icons'
-import { Stack } from 'expo-router'
-import { Image, Text } from 'react-native'
- 
+import { FontAwesome6, Feather } from '@expo/vector-icons';
+import { Stack } from 'expo-router';
+import { Image } from 'react-native';
+
 const Layout = () => {
   return (
-   <Stack screenOptions={{headerShadowVisible: false}}>
-    <Stack.Screen 
-    name="(tabs)"
-    options={{
-      headerLeft: () => (
-        <FontAwesome6 name="user-circle" size={24} color="black" />
-      ),
-      headerRight: () => 
-        <Feather name="settings" size={24} color="black" /> ,
-      headerTitle: () => (
-        <Image
-        source={require('assets/rrg-logo.png')}
-        style={{ width: 30, height: 30, resizeMode: 'contain'}}
+    <Stack screenOptions={{ headerShadowVisible: false }}>
+      <Stack.Screen
+        name="(tabs)"
+        options={{
+          headerLeft: () => <FontAwesome6 name="user-circle" size={24} color="black" />,
+          headerRight: () => <Feather name="settings" size={24} color="black" />,
+          headerTitle: () => (
+            <Image
+              source={require('assets/rrg-logo.png')}
+              style={{ width: 30, height: 30, resizeMode: 'contain' }}
+            />
+          ),
+          headerTitleAlign: 'center',
+        }}
       />
-      ),
-      headerTitleAlign: 'center'
-    }}/>
-   <Stack.Screen 
-     name="details"
-     options={{ 
-     headerTitle: 'Details', 
-     headerBackTitle: 'Back',
-     headerTitleAlign: 'center'
-  }}
-/>
- 
-   </Stack>
-  )
-}
+    </Stack>
+  );
+};
 
-export default Layout
- 
+export default Layout;
