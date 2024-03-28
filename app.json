@@ -31,7 +31,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/rrg-logo.png",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     }
